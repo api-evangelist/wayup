@@ -1,7 +1,24 @@
 aid: wayup
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wayup.png
 name: wayup
-description: wayup is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: WayUp is a US early-career job and internship marketplace that connects college
+  students and recent graduates with roles at 3,800+ vetted employers. Founded as Campus Job and
+  rebranded WayUp in 2015, it was acquired by campus-recruiting company Yello in 2021. Candidates
+  upload a resume and are matched to entry-level jobs, internships, and virtual career fairs, while
+  employers use WayUp for early-talent sourcing and diversity recruiting. As of this profile WayUp
+  publishes no public developer API or developer portal; its surface is a consumer web application
+  plus a Help Scout knowledge base. It was surfaced as a portfolio company of Slow Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/wayup/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Jobs
+- Recruiting
+- Early Career
+- Internships
+- Career
+- Talent Acquisition
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wayup-domain-security.yml
 - type: Website
   url: https://wayup.com
+- type: SignUp
+  url: https://www.wayup.com/register
+- type: Login
+  url: https://www.wayup.com/login
+- type: Support
+  url: https://www.wayup.com/contact
+- type: HelpCenter
+  url: https://wayup.helpscoutdocs.com/
+- type: Blog
+  url: https://www.wayup.com/s/entry-level-jobs
+- type: TermsOfService
+  url: https://www.wayup.com/terms
+- type: PrivacyPolicy
+  url: https://www.wayup.com/privacy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
